@@ -26,9 +26,9 @@ class WomenList extends React.Component {
     }
 
     render(){
-        console.log(this.state.data)
         return (
             <div>
+                <h2>List of Players</h2>
                {this.state.data && this.state.data.map(player => (
                    <PlayerCard player ={player}/> 
                ))}
